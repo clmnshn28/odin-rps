@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissor</title>
+  
+  <link rel="icon" type="x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>ROCK. PAPER. SCISSOR.</h1>
+  
+  <div id="container">
+    <div class="container-box1">
+      <img src="images/rock.png" alt="hand">
+      <p>PLAYER</p>
+      <p id="player-score">0</p>
+    </div>
+    <div class="container-box2">VS</div>
+    <div class="container-box3">
+      <img src="images/rock.png" alt="hand">
+      <p>COMPUTER</p>
+      <p id="computer-score">0</p>
+    </div>
+  </div>
+  <div id="result">YOU WIN</div>
+  <div id="player-container">
+    <div id="container-position">
+      <p>Choose:</p>
+      <div id="player-choose">
+        <button onclick="selectChoice('rock')" data-choice="rock"><img src="images/rock.png" alt="hand"></button>
+        <button onclick="selectChoice('paper')" data-choice="paper"><img src="images/paper.png" alt="hand"></button>
+        <button onclick="selectChoice('scissor')" data-choice="scissor"><img src="images/scissor.png" alt="hand"></button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="button-container">
+   <button onclick="playGame()" >GO</button>
+  </div>
+  <footer>
+    <p>Copyright @ Celmin Shane A Quizon 2024</p>
+  </footer>
+</body>
+</html>
