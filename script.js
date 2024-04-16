@@ -31,7 +31,14 @@ function playGame() {
   const selectedButton = document.querySelector('#player-choose button[style="background-color: rgb(91, 66, 12);"]');
  
   if (!selectedButton) {
-      document.getElementById("result").innerText = "YOU MUST CHOOSE FIRST";
+      let result = "YOU MUST CHOOSE FIRST!";
+      const resultElement =document.getElementById("result");
+      resultElement.innerText = result;
+      resultElement.style.display = "flex"; 
+
+      setTimeout(function() {
+        resultElement.style.display = "none";
+      }, 3000);
       return;
   }
 
@@ -76,7 +83,7 @@ function playGame() {
 
   setTimeout(function() {
     resultElement.style.display = "none";
-  }, 3000);
+  }, 2000);
 }
 
 
