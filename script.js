@@ -28,7 +28,7 @@ function getComputerChoice() {
 
 function playGame() {
   // Get player's choice
-  const selectedButton = document.querySelector('#player-choose button[style="background-color: rgb(91, 66, 12);"]');
+  const selectedButton = document.querySelector('#player-choose button');
  
   if (!selectedButton) {
       document.getElementById("result").innerText = "YOU MUST CHOOSE FIRST";
@@ -76,7 +76,7 @@ function playGame() {
 
   setTimeout(function() {
     resultElement.style.display = "none";
-  }, 2000);
+  }, 3000);
 }
 
 
